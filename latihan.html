@@ -37,6 +37,7 @@
     
     .nav-link {
         color: white;
+        font-weight: bold;
     }
     
     .nav-item {
@@ -171,12 +172,17 @@
     
     .section-popular-content .section-popular-travel .card-travel {
         background-color: #000;
-        color: #720b0b;
+        color: #0000008f;
         padding: 30px;
         background-size: cover;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         border-radius: 30px;
-        
+        box-shadow: 10px 10px;
+    }
+    
+    .section-popular-content .section-popular-travel .card-travel:hover {
+        scale: 1.1;
+        transition: 1s;
     }
     
     .section-popular-content .section-popular-travel .travel-county {
@@ -185,13 +191,30 @@
     }
     
     .section-popular-content .section-popular-travel .travel-location {
-        font-size: 18px;
-        color: #ff0000;
         margin-top: 400px;
     }
     
+    .card-travel {
+        margin-top: 130px;
+    }
+    
+    .card-travel h1 {
+        color: #ffa700;
+        font-family: 'Racing Sans One', cursive;
+        font-size: 25px;
+    }
+    
+    .container h2 {
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Racing Sans One', cursive;
+        padding-top: 70px;
+        color: white;
+        text-shadow: 2px 2px 5px #ffa700;
+    }
+    
     .section-popular-content .section-popular-travel .travel-button .btn-travel-details {
-        background-color: #FFC400;
+        background-color: rgba(34, 34, 34, 0);
         color: #ffffff;
     }
     
@@ -287,30 +310,43 @@
 
     <!-- Game Favorit -->
     <section class="section-popular-content" style="background-color: #333333;" id="GameFavorit">
-        <div class="container" style="background-color: #333333;">
+        <div class="container" style="background-color: #333333; height: 100vh;">
+            <h2>GAME FAVORITE</h2>
             <div class="section-popular-travel row justify-content-center">
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url(Frame\ 9.png);">
-                        <div class="travel-country">INDONESIA</div>
-                        <div class="travel-location">LOMBOK</div>
+                    <div class="card-travel text-center d-flex flex-column" data-aos="flip-down" data-aos-duration="3000" style="background-image: url(Frame\ 9.png);">
+                        <div class="travel-location"></div>
+                        <h1 class="travel-country">VALORANT</h1>
+                        <div class="travel-button mt-auto">
+                            <a href="https://playvalorant.com/id-id/news/" class="btn btn-travel-details px-4">View Details</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('gambar2.jpg');">
-                        <div class="travel-country">INDONESIA</div>
-                        <div class="travel-location">BOROBUDUR</div>
+                    <div class="card-travel text-center d-flex flex-column" data-aos="flip-down" data-aos-duration="3000" style="background-image: url('Frame\ 11.png');">
+                        <div class="travel-location"></div>
+                        <h1 class="travel-country">OVERWATCH</h1>
+                        <div class="travel-button mt-auto">
+                            <a href="https://overwatch.blizzard.com/en-us/" class="btn btn-travel-details px-4">View Details</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('gambar3_watchdog.jpg');">
-                        <div class="travel-country">INDONESIA</div>
-                        <div class="travel-location">RAJA AMPAT</div>
+                    <div class="card-travel text-center d-flex flex-column" data-aos="flip-down" data-aos-duration="3000" style="background-image: url('gambar3_watchdog.jpg');">
+                        <div class="travel-location"></div>
+                        <h1 class="travel-country">WATCH DOGS</h1>
+                        <div class="travel-button mt-auto">
+                            <a href="https://store.steampowered.com/app/243470/Watch_Dogs/" class="btn btn-travel-details px-4">View Details</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="card-travel text-center d-flex flex-column" style="background-image: url('montagne_rainbowsix.jpg');">
-                        <div class="travel-country">INDONESIA</div>
-                        <div class="travel-location">BROMO</div>
+                    <div class="card-travel text-center d-flex flex-column" data-aos="flip-down" data-aos-duration="3000" style="background-image: url('operator.jpg');">
+                        <div class="travel-location"></div>
+                        <h1 class="travel-country">RAINBOW SIX SIEGE</h1>
+                        <div class="travel-button mt-auto">
+                            <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/" class="btn btn-travel-details px-4">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
